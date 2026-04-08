@@ -38,9 +38,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define PWM_OFFSET       3200
-#define PWM_SCALER       3200
-#define ADC_10BIT_MAX    1023
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -105,7 +102,6 @@ int main(void)
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -128,9 +124,7 @@ HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 
 	  //pwmValue=(adcValue*64000)/1000;
 
-	  //pwmValue = 3200 + ((adcVal * 3200) / 1023);
-
-	  pwmValue = PWM_OFFSET + ((adcVal * PWM_SCALER) / ADC_10BIT_MAX);
+	  pwmValue = 3200 + ((adcVal * 3200) / 1023);
 
 
 	 __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, pwmValue);

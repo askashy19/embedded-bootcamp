@@ -46,10 +46,9 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/CMSIS/Include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/CMSIS/Device/ST/STM32F0xx/Include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy&quot;"/>
-									<listOptionValue builtIn="false" value="C:/Users/aryav/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.6/Drivers/STM32F0xx_HAL_Driver/Inc"/>
-									<listOptionValue builtIn="false" value="C:/Users/aryav/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.6/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy"/>
-									<listOptionValue builtIn="false" value="C:/Users/aryav/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.6/Drivers/CMSIS/Device/ST/STM32F0xx/Include"/>
-									<listOptionValue builtIn="false" value="C:/Users/aryav/STM32Cube/Repository/STM32Cube_FW_F0_V1.11.6/Drivers/CMSIS/Include"/>
+									<listOptionValue builtIn="false" value="../%{ProjDirPath}/Drivers/STM32F0xx_HAL_Driver/Inc"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDIrPath}/Drivers/STM32F0xx_HAL_Driver/Inc/Legacy&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDIrPath}/Drivers/CMSIS/Include&quot;"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1784432339" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>

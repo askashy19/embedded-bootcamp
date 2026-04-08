@@ -128,9 +128,7 @@ HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 
 	  //pwmValue=(adcValue*64000)/1000;
 
-	  //pwmValue = 3200 + ((adcVal * 3200) / 1023);
-
-	  pwmValue = PWM_OFFSET + ((adcVal * PWM_SCALER) / ADC_10BIT_MAX);
+	  pwmValue = 3200 + ((adcVal * 3200) / 1023);
 
 
 	 __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, pwmValue);
